@@ -1,3 +1,4 @@
 #!/bin/bash
+# i change something
 
-echo "joindevops"
+echo "joindevops.com"
