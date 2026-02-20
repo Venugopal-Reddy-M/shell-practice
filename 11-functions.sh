@@ -7,3 +7,14 @@ USERID=$(id -u) #id -u → Gets current user ID
     exit 1
  fi
 
+ VALIDATE(){
+    if [ $1 -ne 0 ];then
+       echo "$2...FAILURE"
+       exit 1
+    else 
+       echo "$2 ...Success"
+    fi   
+ }
+ dnf install nginx -y
+ VALIDATE $? "install ngnix"
+
