@@ -32,9 +32,9 @@ fi
 
 # install nodejs
 
-dnf install nodejs
+dnf install nodejs -y
 if [$? -ne 0]; then
    echo "install nodejs...Failure"
 else
-    echo "install mysql ...Success" 
+    echo "install nodejs ...Success" 
 fi 
