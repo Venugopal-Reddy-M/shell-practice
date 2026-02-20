@@ -10,7 +10,7 @@ else
 fi
 
 echo "Installing Nginx"
-
+# install nginx
 dnf install nginx -y
 
 if [ $? -ne 0 ]; then
@@ -20,3 +20,11 @@ else
    echo "Istalling ngin ....Success"
 fi
     
+# install mysql -y
+dnf install mysql -y
+if [$? -ne 0]; then
+    echo "install mysql..Failure"
+    exit 1
+else 
+   echo "install mysql ... success"
+fi
