@@ -29,3 +29,12 @@ if [$? -ne 0]; then
 else 
    echo "install mysql ... success"
 fi
+
+# install nodejs
+
+dnf install nodejs
+if [$? -ne 0]; then
+   echo "install nodejs...Failure"
+else
+    echo "install mysql ...Success" 
+fi 
