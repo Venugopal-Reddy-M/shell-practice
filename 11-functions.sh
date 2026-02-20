@@ -7,6 +7,7 @@ USERID=$(id -u) #id -u → Gets current user ID
     exit 1
  fi
 
+# $1 $2 are arguments
  VALIDATE(){
     if [ $1 -ne 0 ];then
        echo "$2...FAILURE"
@@ -17,4 +18,9 @@ USERID=$(id -u) #id -u → Gets current user ID
  }
  dnf install nginx -y
  VALIDATE $? "install ngnix"
+ 
+dnf install mysql -y
+VALIDATE $? "Installing Mysql"
 
+dnf install nodejs -y
+VALIDATE $? "Installing nodejs"
