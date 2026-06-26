@@ -2,6 +2,6 @@
 
 PERSON1=$1
 PERSON2=$2
-# arrguments passed to the script
+# arrguments passed to the script ex: 04-variables.sh venu ramu 
 echo "$PERSON1:: hi $2 how are you now"
 echo "$PERSON2:: hello $1, im fine"
